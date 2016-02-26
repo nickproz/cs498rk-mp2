@@ -141,7 +141,7 @@
     * @option
     * @example true
     */
-    useMUI: true
+    useMUI: false
   };
   /**
   * Initializes the plugin by creating jQuery collections, setting attributes, and starting the animation.

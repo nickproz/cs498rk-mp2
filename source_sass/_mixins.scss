@@ -1,1 +1,23 @@
 // Insert your mixins
+
+@mixin about-me-color()
+{
+	//border-top:2px solid rgba(41,62,106,1);
+	//background-color:rgba(41,62,106,0.6);
+	background-blend-mode: multiply;
+	//background-color:rgb(0, 204, 255);
+}
+
+@mixin experience-color()
+{
+	//border-top:2px solid #60ccd2;
+	//background-color:rgba(146, 220, 224,0.6);
+	background-blend-mode: multiply;
+}
+
+@mixin skills-color()
+{
+	//border-top:2px solid rgba(119, 186, 152,1);
+	//background-color:rgba(119, 186, 152,0.6);
+	background-blend-mode: multiply;
+}

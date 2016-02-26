@@ -3,42 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>MP2 Starter</title>
+  <title>Nick Prozorovsky</title>
+  <link rel="shortcut icon" href="media/crest.ico" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./foundation6_lib/css/foundation.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./lib/slick/slick/slick.css">
+  <link rel="stylesheet" href="./lib/slick/slick/slick-theme.css">
+  <link href="./lib/hover/css/hover-min.css" rel="stylesheet">
+  
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Ek+Mukta' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <nav class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">MP2</li>
-        <li><a href="https://courses.engr.illinois.edu/cs498rk1/">Web Page</a></li>
-      </ul>
-    </div>
-  </nav>
-	<div class="row text-center">
-		<h3>Hello. It's Me.</h3>
-	</div>
-	<section class="row">
-		<div class="alert columns small-12 large-6">
-			<div class="text-center"><img src="http://lorempixel.com/400/200/cats"/></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-      </p>
-    </div>
-		<div class="columns small-12 large-6">
-	  	<div class="text-center"><img src="http://lorempixel.com/400/200/nature"/></div>
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!
-      </p>
-    </div>
-  </section>
 
-  <!-- Scripts -->
-  <script src="./js/script.js"></script>
-  <script src="./lib/jquery-2.1.3.min/index.js"></script>
-  <script src="./foundation6_lib/js/foundation.min.js"></script>
-  <script src="http://localhost:35729/livereload.js"></script>
+	<!-- Scripts -->
+	  <script src="./lib/jquery-2.1.3.min/index.js"></script>
+	  <script src="./js/script.js"></script>
+	  <script src="./lib/slick/slick/slick.js"></script>
+	  <script src="./foundation6_lib/js/foundation.min.js"></script>
+
+	  <script src="http://localhost:35729/livereload.js"></script>
+	
+	<!-- NAVIGATION -->
+	<div>
+        <div class="navigation large">
+          <nav class="vert">
+			<ul class="horizontal menu" data-magellan data-options="animationEasing:swing; animationDuration:1500; barOffset:25">
+				<li class="hvr-grow"><a href="#home">Home</a></li> 
+				<li class="hvr-grow"><a href="#aboutMe">About Me</a></li>
+				<li class="hvr-grow"><a href="#experience">Experience</a></li>
+				<li class="hvr-grow"><a href="#skills">Skills</a></li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+	
+	<!-- HOME -->
+	<div id="home" data-magellan-target="home">
+		<div class="vert"> <a> <div class="hvr-wobble-skew">  Hi, I'm Nick. </div> </a> </div>
+	</div>
+	
+	<!-- ABOUT ME -->
+	<div id="aboutMe" data-magellan-target="aboutMe">
+		<div class="row">
+			<div class="carContainer small-12 medium-6 large-5 large-offset-1 columns" >
+					
+				<div class="carousel">
+					<div> <img src="../media/carousel/(1).jpg"> </div>
+					<div> <img src="../media/carousel/(2).jpg"> </div>
+					<div> <img src="../media/carousel/(3).jpg"> </div>
+					<div> <img src="../media/carousel/(4).jpg"> </div>
+					<div> <img src="../media/carousel/(5).jpg"> </div>
+					<div> <img src="../media/carousel/(6).jpg"> </div>
+					<div> <img src="../media/carousel/(7).jpg"> </div>
+					<div> <img src="../media/carousel/(8).jpg"> </div>
+					<div> <img src="../media/carousel/(9).jpg"> </div>
+					<div> <img src="../media/carousel/(10).jpg"> </div>
+					<div> <img src="../media/carousel/(11).jpg"> </div>
+					<div> <img src="../media/carousel/(12).jpg"> </div>
+				</div>
+				
+			</div>
+			
+			<div class="carContainer small-12 medium-6 large-5 end columns"> 
+				<div class="carText">
+					<!-- <img class= "me hvr-bounce-in" src="media/me.png"/> -->
+					<img class= "circlePic hvr-bounce-in" src="media/zoe.jpg"/>
+					<!-- <img class= "circlePic" src="media/han.png"/> <!-- hvr-bounce-in -->
+					<p> I am a computer engineer pursuing a B.S. degree at the University of Illinois with a focus in software and web development. When I'm not behind a screen, I enjoy snowboarding, hiking, and playing ultimate frisbee.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<hr>
+	
+	<!-- EXPERIENCE -->
+	<div id="experience" data-magellan-target="experience">
+	
+		<div class="vert row">
+		
+			<div class="box0 large-2 large-offset-1 columns"> 
+				<a data-open="modal0"> <img class="hvr-float" src="media/logos/illinoislogo.png" /> </a>
+			</div>
+			
+			<div class="box1 large-2 columns">
+				<a data-open="modal1"> <img class="hvr-float" src="media/logos/illinimedialogo.png" /> </a>
+			</div>
+			
+			<div class="box2 large-2 columns"> 
+				<a data-open="modal2"> <img class="hvr-float" src="media/logos/argonnelogo.png" /> </a>
+			</div>
+			
+			<div class="box3 large-2 columns"> 
+				<a data-open="modal3"> <img class="hvr-float" src="media/logos/frisbeelogo.png" /> </a>
+			</div>
+				
+			<div class="box4 large-2 columns end"> 
+				<a data-open="modal4"> <img class="hvr-float" src="media/logos/housinglogo.png" /> </a>
+			</div>
+
+		</div>
+		
+		<div class="reveal modal" id="modal0" data-reveal>
+			<h2>University of Illinois</h2>
+			<h3>ECE 220 Grader/Lab Assistant</h3>
+			<h4>Champaign, IL | Jan. 2015 - Present </h4>
+			<ul>
+			  <li>Analyze student code for accuracy and efficiency</li>
+			  <li>Hold office hours to aid students with homework and machine problems</li>
+			  <li>Offer assistance to students during designated lab sections and office hours</li>
+			</ul>
+			<button class="close-button" data-close aria-label="Close modal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		
+		<div class="reveal modal" id="modal1" data-reveal>
+			<h2>Illini Media Company</h2>
+			<h3>IT Technician</h3>
+			<h4>Champaign, IL | Oct. 2014 - Oct. 2015 </h4>
+			<ul>
+			  <li>Improved and monitored back-end server procedures</li>
+			  <li>Provided support for employees with technology-related issues</li>
+			</ul>
+			<button class="close-button" data-close aria-label="Close modal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		
+		<div class="reveal modal" id="modal2" data-reveal>
+			<h2>University of Chicago at Argonne National Laboratory</h2>
+			<h3>Computation Institute Intern</h3>
+			<h4>Lemont, IL | June 2013 - Sept. 2013 </h4>
+			<ul>
+			  <li>Enhanced back-end processes and coded genomic analysis programs for Globus Genomics</li>
+			  <li>Created new dynamic computer program/tool adapted by group</li>
+			  <li>Wrote research paper with Ian Foster which was accepted at WORKS Supercomputing Conference/Workshop</li>
+			</ul>
+			<button class="close-button" data-close aria-label="Close modal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		
+		<div class="reveal modal" id="modal3" data-reveal>
+			<h2>Ultimate Frisbee Varsity Club</h2>
+			<h3>Captain</h3>
+			<h4>Champaign, IL | May 2014 - Present </h4>
+			<ul>
+			  <li>Captain of the varsity team and entire club (150+)</li>
+			  <li>Built the club website from scratch, maintain it to keep it up-to-date (illinoisultimate.com)</li>
+			  <li>Generate practice plans, organize tournaments, coordinate events</li>
+			  <li>Be a leader for the team on and off the field, set an example for the entire club</li>
+			</ul>
+			<button class="close-button" data-close aria-label="Close modal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		
+		<div class="reveal modal" id="modal4" data-reveal>
+			<h2>University of Illinois Housing</h2>
+			<h3>Desk Clerk</h3>
+			<h4>Champaign, IL | Aug. 2013 - Present </h4>
+			<ul>
+			  <li>Assist students to create best possible living experience</li>
+			  <li>Manage building security, handle mail, and administer tours to prospective students</li>
+			</ul>
+			<button class="close-button" data-close aria-label="Close modal" type="button">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		
+	</div>
+	
+	<hr>
+	
+	<!-- SKILLS -->
+	<div id="skills" data-magellan-target="skills">
+		<div class="row vert">
+			<div class="large-5 medium-7 small-9 small-centered medium-centered large-centered columns">
+			<!-- <div class="carContainer small-12 medium-6 large-4 large-offset-2 columns">  -->
+					<h5>HTML5/CSS3</h5> <div class="progress hvr-grow"> <span class="meter" style="width:75%"> <p class="percent">75%</p> </span> </div>
+					<h5>Javascript/Jquery</h5> <div class="progress hvr-grow"> <span class="meter" style="width:63%"> <p class="percent">63%</p> </span> </div>
+					<h5>Python</h5> <div class="progress hvr-grow"> <span class="meter" style="width:60%"> <p class="percent">60%</p> </span> </div>
+					<h5>C/C++</h5> <div class="progress hvr-grow"> <span class="meter" style="width:54%"> <p class="percent">54%</p> </span> </div>
+					<h5>Java</h5> <div class="progress hvr-grow"> <span class="meter" style="width:42%"> <p class="percent">42%</p> </span> </div>
+					<h5>Photoshop</h5> <div class="progress hvr-grow"> <span class="meter" style="width:35%"> <p class="percent">35%</p> </span> </div>
+					<h5>Dancing</h5> <div class="progress hvr-grow"> <span class="meter" style="width:89%"> <p class="percent">89%</p> </span> </div>
+					<div class="row scale">
+						<div class="small-4 columns">
+							<h6 style="float:left"> | <br> Needs  <br> Work </h6>
+						</div>
+						<div class="small-4 columns">
+							<h6> | <br> Getting <br> There </h4>
+						</div>
+						<div class="small-4 columns">
+							<h6 style="float:right"> | <br> Expert <br> &zwnj;</h6>
+						</div>
+					</div>
+			</div>
+			<!-- <div class="carContainer small-12 medium-6 large-2 large-offset-1 end columns">
+				<img class= "me hvr-bounce-in" src="media/me.png"/>
+				<h5> Nicholas Prozorovsky </h5>
+				<h5> nick.prozorovsky@gmail.com </h5>
+				<h5> (630)200-8105 </h5>
+			</div> -->
+			
+		</div>
+	</div>
+	
+	<!-- FOOTER -->
+	<div class="footer"> 
+		<a href="https://www.facebook.com/prozorovsky"> <i class="fa fa-facebook-square icon vert"></i> </a>
+		<a href="https://twitter.com/nickproz"> <i class="fa fa-twitter-square icon vert"></i> </a>
+		<a href="https://www.linkedin.com/in/nicholas-prozorovsky-367b4b90"> <i class="fa fa-linkedin-square icon vert"></i> </a>
+	</div>
+	
+	<script>
+		$(document).foundation();
+	</script>
+	
 </body>
 </html>
