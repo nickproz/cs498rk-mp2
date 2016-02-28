@@ -1,0 +1,5 @@
+Add video element
+Mixins/Variables
+
+Contact section next to skills
+Background color/texture?

@@ -62,7 +62,7 @@
 // HOME
 #home
 {
-	background-image:url("../media/home.jpg");
+	background-image:url("../data/home.jpg");
 	background-size: cover;
 	background-color:rgba(0, 204, 255, 0.5);
 	background-blend-mode: multiply;
@@ -287,7 +287,9 @@
 }
 
 .progress {
-	margin:15px auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
 	width:100%;
 	height:30px;
 	overflow:hidden;
@@ -329,6 +331,7 @@
 	height:70px;
 	text-align:center; 
 	background-color: $header-footer-color;
+	bottom:0;
 }
 
 .footer i
@@ -383,6 +386,17 @@ hr
     border: 0;
     border-top: 2px solid $blue;
     padding: 0;
+}
+
+.row
+{
+	max-width:1000000rem !important;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    color: #404040 !important;
 }
 
 @media only screen and (max-width: 640px) 
