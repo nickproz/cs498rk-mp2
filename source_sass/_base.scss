@@ -64,7 +64,7 @@
 {
 	background-image:url("../media/home.jpg");
 	background-size: cover;
-	background-color:rgba(0, 204, 255, 0.6);
+	background-color:rgba(0, 204, 255, 0.5);
 	background-blend-mode: multiply;
 	//width:100vw;
 	width:100%;
@@ -197,8 +197,8 @@
 // EXPERIENCE
 #experience
 {
-	height:1000px;
-	//height:100vh;
+	//height:1000px;
+	height:100vh;
 	width:100%;
 	@include experience-color()
 }
@@ -213,6 +213,13 @@
 	box-shadow: 10px 10px 10px #888888;
 	border:$half-border-white;
 	//border: 2px solid $blue;
+	
+}
+
+.imgContainer
+{
+	margin: 0 auto;
+	text-align: center;
 }
 
 #experience img:hover
@@ -396,6 +403,11 @@ hr
 	{
 		width:80vw;
 	}
+	#experience img
+	{
+		height:15vh;
+		width:15vh;
+	}
 }
 
 @media only screen and (max-width: 1024px) 
@@ -415,5 +427,10 @@ hr
 	.contact
 	{
 		margin-top:200px;
+	}
+	#experience img
+	{
+		height:17vh;
+		width:17vh;
 	}
 }
