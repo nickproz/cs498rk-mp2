@@ -1,5 +1,7 @@
-Add video element
 Mixins/Variables
+Fix carousel images??
 
 Contact section next to skills
 Background color/texture?
+Hamburger menu
+Content fade in on page load/page scroll

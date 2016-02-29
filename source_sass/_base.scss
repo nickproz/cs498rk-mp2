@@ -1,8 +1,8 @@
-// Add any custom Sass & CSS here
+/* IMPORTS */
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@import '../public/foundation6_lib/scss/foundation.scss';
 
-// NAVIGATION 
-
+/* NAVIGATION */
 .navigation 
 { 
 	position:fixed;
@@ -11,7 +11,6 @@
 	z-index:9999;
 	text-align:center; 
 	background-color: $header-footer-color;
-	//background-color: rgba(64, 64, 64, 0.5);
 	border: $half-border-black;
 	//opacity:0.8;
 	
@@ -23,13 +22,11 @@
 
 .small
 {
-	//height:8vh;
 	height:70px;
 }
 
 .large
 {
-	//height:10vh;
 	height:90px;
 }
 
@@ -48,69 +45,26 @@
 
 .navigation a
 {
-	//font-size:24px;
 	font-size:2vh;
 	color:white;
 }
 
 .navigation a:hover
 {
-	//color:#c0c0c0;
 	color:rgb(0, 204, 255);
 }
 
-// HOME
+/* HOME */
 #home
 {
-	background-image:url("../data/home.jpg");
+	background-image:url("../data/home1.jpg");
 	background-size: cover;
-	background-color:rgba(0, 204, 255, 0.5);
+	background-color:rgba(0, 204, 255, 0.4);
 	background-blend-mode: multiply;
-	//width:100vw;
 	width:100%;
-	height:100vh;
+	height:110vh;
 	background-attachment: fixed;
 	top:0;
-}
-
-#home h5
-{
-	color:white;
-	font-size:56px;
-	line-height:55px;
-	z-index:10;
-	text-align:center;
-	margin-top:25px;
-	text-shadow: 2px 2px #909090;
-}
-
-#home h5:hover
-{
-	color:white;
-	text-shadow: 1px 1px #909090;
-}
-
-#home img
-{
-	//height:10em;
-	//width:7em;
-	height:25vh;
-	width:15vh;
-	text-align:center;
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
-}
-
-#homeText
-{
-	display:none;
-}
-
-
-.homeContainer
-{
-	margin-top:150px;
 }
 
 #home div
@@ -121,10 +75,31 @@
 	font-size:64px;
 }
 
-// ABOUT ME
+#videoContainer {
+    //position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+	width:100%;
+	//height:110vh;
+	display:none;
+}
+
+#video {
+	display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* ABOUT ME */
 #aboutMe
 {
-	//height:1000px;
 	height:100vh;
 	width:100%;
 	@include about-me-color();
@@ -135,9 +110,7 @@
 
 #aboutMe p
 {
-	//font-size:36px;
 	font-size:1.5vw;
-	//line-height:100px;
 	line-height:6vh;
 	margin-top:20px;
 	//-webkit-text-stroke: 1px black;
@@ -146,14 +119,12 @@
 
 #aboutMe h1
 {
-	//font-size:96px;
 	font-size:4.5vh;
 	color: black;
 }
 
 .carText
 {
-	//box-shadow: 3px 3px 3px #888888;
 	margin-top:10vh;
 }
 
@@ -194,11 +165,10 @@
 	border: $half-border-off-black;
 }
 
-// EXPERIENCE
+/* EXPERIENCE */
 #experience
 {
-	//height:1000px;
-	height:100vh;
+	height:110vh;
 	width:100%;
 	@include experience-color()
 }
@@ -209,11 +179,8 @@
 	width:25vh;
 	margin: 10px 0px;
 	//border-radius:30px;
-	//box-shadow: 5px 5px 3px #888888;
 	box-shadow: 10px 10px 10px #888888;
 	border:$half-border-white;
-	//border: 2px solid $blue;
-	
 }
 
 .imgContainer
@@ -225,15 +192,6 @@
 #experience img:hover
 {
 	opacity:0.97;
-}
-
-.modal
-{
-	background-image:$background;
-	transition: all 1s;
-	-moz-transition: all 1s;
-	-webkit-transition: all 1s;
-	-o-transition: all 1s; 
 }
 
 .modal h2
@@ -270,13 +228,11 @@
 	margin-top:30px;
 }
 
-// SKILLS
+/* SKILLS */
 #skills
 {
 	height:1000px;
-	//height:100vh;
 	width:100%;
-	//text-align:center;
 	@include skills-color()
 }
 
@@ -289,12 +245,12 @@
 .progress {
 	margin-left:auto;
 	margin-right:auto;
-	margin-bottom:50px;
+	margin-bottom:40px;
 	width:100%;
-	height:30px;
+	height:45px;
 	overflow:hidden;
 	background:#e5e5e5;
-	//border-radius:6px;
+	border-radius:3px;
 	border: $half-border-black;
 	box-shadow: 3px 3px 3px #888888;
 }
@@ -306,7 +262,6 @@
     min-width:1%;
     height:100%;
     background:rgb(0, 204, 255);
-	//border-right: $half-border-black;
 }
 
 .percent 
@@ -347,12 +302,10 @@
 	color:$blue;
 }
 
-// OTHER
+/* OTHER */
 .active
 {
-	//background-color: rgba(80, 80, 80, 0.5);
 	background-color:#505050;
-	//background-color:rgba(0, 204, 255, 0.5);
 }
 
 .vert 
@@ -368,7 +321,7 @@ body, html
 	width:100%;
     margin: 0;
 	background-color:#eeeeee;
-	//background-image:$background;
+	background-image:$background;
 	background-blend-mode:multiply;
 	font-family: 'Cuprum', sans-serif;
 }
@@ -388,6 +341,7 @@ hr
     padding: 0;
 }
 
+/* LIBRARY FIXES */
 .row
 {
 	max-width:1000000rem !important;
@@ -399,6 +353,7 @@ hr
     color: #404040 !important;
 }
 
+/* SMALL SCREENS */
 @media only screen and (max-width: 640px) 
 {
 	#aboutMe p
@@ -408,10 +363,6 @@ hr
 	.carText
 	{
 		margin-top:0px;
-	}
-	.carContainer
-	{
-		//margin-top:30px;
 	}
 	.carousel
 	{
@@ -424,6 +375,7 @@ hr
 	}
 }
 
+/* MEDIUM SCREENS */
 @media only screen and (max-width: 1024px) 
 {
    #aboutMe p
@@ -433,10 +385,6 @@ hr
 	.carText
 	{
 		margin-top:5px;
-	}
-	.carContainer
-	{
-		//margin-top:30px;
 	}
 	.contact
 	{

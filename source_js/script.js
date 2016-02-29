@@ -1,10 +1,15 @@
 // Write any custom javascript functions here
 $(document).ready(function() {
 	
-	$('#homePhoto img').hover(function() {
-		$('#homeText').slideToggle(500);
+	/* NAVIGATION RESIZE */
+	$(window).scroll(function () {
+		if(document.body.scrollTop === 0)
+			$(".navigation").removeClass("small").addClass("large");
+		else
+			 $(".navigation").removeClass("large").addClass("small");
 	});
 	
+	/* ABOUT ME CAROUSEL */
 	$('.carousel').slick({
 		dots: true,
 		infinite: true,
@@ -14,20 +19,24 @@ $(document).ready(function() {
 		autoplay: true
 	});
 
-	$(window).scroll(function () {
-		if(document.body.scrollTop === 0) {
-			/* $(".navigation").animate({zoom: '100%'}, '500');
-			shrink = false; */
-			$(".navigation").removeClass("small").addClass("large");
-		} 
-		else {
-			 $(".navigation").removeClass("large").addClass("small");
-			/* if(shrink === false)
-			{
-				$(".navigation").animate({zoom: '90%'}, '500');
-				shrink = true;
-			} */
+	/* VIDEO */
+	var video = false;
+	$('#homeText').click(function() {
+		
+		if($(window).width() > 1024 && video){
+			$('#video').hide();
+			$("#home").css('background-image', 'url("../data/home1.jpg")');
+			$("#home").css('background-color', 'rgba(0, 204, 255, 0.4)');
+			video = false;
 		}
+		
+		else if($(window).width() > 1024 && !video) {
+			$("#home").css('background-image', 'none');
+			$("#home").css('background-color', 'rgba(255, 255, 255, 0)');
+			$('#video').show();
+			video = true;
+		}
+		
 	});
 	
 });
