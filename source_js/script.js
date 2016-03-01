@@ -25,7 +25,7 @@ $(document).ready(function() {
 		
 		if($(window).width() > 1024 && video){
 			$('#video').hide();
-			$("#home").css('background-image', 'url("../data/home1.jpg")');
+			$("#home").css('background-image', 'url("./data/home1.jpg")');
 			$("#home").css('background-color', 'rgba(0, 204, 255, 0.4)');
 			video = false;
 		}
