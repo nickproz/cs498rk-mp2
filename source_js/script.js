@@ -39,4 +39,56 @@ $(document).ready(function() {
 		
 	});
 	
+	/* CONTACT */
+	var male = false;
+	var mobile = false;
+	var email = false;
+	$('.fa-male').hover(
+	  function () {
+		if(male == false)
+			$('.male').show();
+	  }, 
+	  function () {
+		if(male == false)
+			$('.male').hide();
+	  }
+	);
+	
+	$('.fa-mobile').hover(
+	  function () {
+		if(mobile == false)
+			$('.mobile').show();
+	  }, 
+	  function () {
+		if(mobile == false)
+			$('.mobile').hide();
+	  }
+	);
+	
+	$('.fa-envelope-o').hover(
+	  function () {
+		if(email == false)
+			$('.email').show();
+	  }, 
+	  function () {
+		if(email == false)
+			$('.email').hide();
+	  }
+	);
+	
+	$('.fa-male').click( function () {
+		$('.male').show();
+		male = true;
+	});
+	
+	$('.fa-mobile').click( function () {
+		$('.mobile').show();
+		mobile = true;
+	});
+	
+	$('.fa-envelope-o').click( function () {
+		$('.email').show();
+		email = true;
+	});
+	
 });

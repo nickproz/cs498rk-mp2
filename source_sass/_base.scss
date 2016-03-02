@@ -98,15 +98,10 @@
 	font-family: $paragraph-font;
 }
 
-#aboutMe h1
-{
-	font-size:4.5vh;
-	color: black;
-}
-
 .carText
 {
 	margin-top:10vh;
+	padding:30px;
 }
 
 .me
@@ -215,12 +210,6 @@
 	@include skills-color()
 }
 
-.contact
-{
-	text-align:center;
-	margin-top:150px;
-}
-
 .progress {
 	margin-left:auto;
 	margin-right:auto;
@@ -256,6 +245,39 @@
 .scale
 {
 	text-align:center;
+}
+
+.contact
+{
+	@include center();
+	margin-top:250px;
+}
+
+.contactContainer
+{
+	height:200px !important;
+	width:200px !important;
+}
+
+.contact img
+{
+	margin-bottom:60px;
+	margin-right:10px;
+}
+
+.lshift
+{
+	margin-right:30px;
+}
+
+.rshift
+{
+	margin-left:30px;
+}
+
+.icon
+{
+	font-size:50px;
 }
 
 /* FOOTER */
@@ -316,7 +338,8 @@ hr
     height: 1px;
 	width:80%;
     border: 0;
-    border-top: 2px solid $blue;
+    //border-top: 2px solid $blue;
+	border-top: 2px solid #404040;
     padding: 0;
 }
 
@@ -324,6 +347,11 @@ hr
 .row
 {
 	max-width:1000000rem !important;
+}
+
+.columns, .column
+{
+	padding: 0px !important;
 }
 
 .slick-prev:before,
@@ -335,6 +363,10 @@ hr
 /* SMALL SCREENS */
 @media only screen and (max-width: 640px) 
 {
+	.carousel
+	{
+		width:80vw;
+	}
 	#aboutMe p
 	{
 		font-size:24px;
@@ -343,14 +375,27 @@ hr
 	{
 		margin-top:0px;
 	}
-	.carousel
-	{
-		width:80vw;
-	}
 	#experience img
 	{
 		height:15vh;
 		width:15vh;
+	}
+	#skills
+	{
+		height:1400px;
+	}
+	.contact
+	{
+		margin-top:30px;
+	}
+	.lshift
+	{
+		margin-right:30px;
+	}
+
+	.rshift
+	{
+		margin-left:0px;
 	}
 }
 
@@ -365,13 +410,21 @@ hr
 	{
 		margin-top:5px;
 	}
-	.contact
-	{
-		margin-top:200px;
-	}
 	#experience img
 	{
 		height:17vh;
 		width:17vh;
+	}
+	#skills
+	{
+		height:1400px;
+	}
+	.contact
+	{
+		margin-top:30px;
+	}
+	.lshift
+	{
+		margin-right:-30px;
 	}
 }

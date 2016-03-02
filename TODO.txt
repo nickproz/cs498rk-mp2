@@ -1,3 +1,4 @@
+Change tab title? (Who am I?)
 Contact section next to skills
 Background color/texture?
 Hamburger menu
